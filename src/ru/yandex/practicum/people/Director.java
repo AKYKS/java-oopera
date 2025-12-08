@@ -17,7 +17,8 @@ public class Director extends Person {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Director director = (Director) o;
-        return numberOfShows == director.numberOfShows;
+        return Objects.equals(name, director.name) && Objects.equals(surname, director.surname)
+                && gender == director.gender && numberOfShows == director.numberOfShows;
     }
 
     @Override

@@ -29,7 +29,7 @@ public class Show {
     }
 
     public void addActor(Actor actor) {
-        if (!listOfActors.contains(actor) && !listOfActors.contains(actor)) {
+        if (!listOfActors.contains(actor)) {
             listOfActors.add(actor);
         }
     }
